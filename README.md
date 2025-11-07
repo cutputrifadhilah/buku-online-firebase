@@ -62,3 +62,13 @@ Secara garis besar:
 ---
 
 ## 📁 Struktur Folder Proyek
+
+
+buku-online-firebase/
+├── index.html            # Halaman utama / login
+├── tambah-buku.html      # Form tambah buku
+├── main.js               # Logika aplikasi (CRUD)
+├── firebaseConfig.js     # Konfigurasi koneksi Firebase
+├── style.css             # Tampilan halaman
+├── firebase.json         # Konfigurasi hosting Firebase
+└── README.md             # Dokumentasi proyek
