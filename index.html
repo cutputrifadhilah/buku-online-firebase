@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stok Buku Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stok Buku Online</h1>
+
+        <div id="auth-container">
+            <div id="register-form">
+                <h2>Register</h2>
+                <input type="email" id="reg-email" placeholder="Email">
+                <input type="password" id="reg-pass" placeholder="Password">
+                <button id="register-btn">Register</button>
+                <p>Sudah punya akun? <a href="#" id="switch-to-login">Login</a></p>
+            </div>
+
+            <div id="login-form" style="display:none;">
+                <h2>Login</h2>
+                <input type="email" id="login-email" placeholder="Email">
+                <input type="password" id="login-pass" placeholder="Password">
+                <button id="login-btn">Login</button>
+                <p>Belum punya akun? <a href="#" id="switch-to-register">Register</a></p>
+            </div>
+        </div>
+
+        <div id="dashboard" style="display:none;">
+            <h2>Dashboard</h2>
+            <p>Selamat datang, <span id="user-email"></span> <button id="logout-btn">Logout</button></p>
+
+            <h3>Tambah Buku</h3>
+            <input type="text" id="book-title" placeholder="Judul Buku">
+            <input type="text" id="book-author" placeholder="Pengarang">
+            <input type="number" id="book-stock" placeholder="Stok">
+            <button id="add-book-btn">Tambah Buku</button>
+
+            <h3>Daftar Buku</h3>
+            <table id="books-table">
+                <thead>
+                    <tr>
+                        <th>Judul</th>
+                        <th>Pengarang</th>
+                        <th>Stok</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="register.js"></script>
+    <script type="module" src="login.js"></script>
+    <script type="module" src="app.js"></script>
+    
+</body>
+</html>
